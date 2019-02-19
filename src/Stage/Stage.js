@@ -1,5 +1,6 @@
 import React from 'react';
 import Dog from '../Dog/Dog';
+import Winner from '../Winner/Winner';
 import './Stage.css';
 
 
@@ -97,13 +98,7 @@ class Stage extends React.Component {
                 </p>
                 <div className="contestants">
                 {winner ? 
-                    <div className="winner"> 
-                        <h2 className="winner-header">{'Winner! Final Score: 4'}</h2>
-                        <img className="winner-picture" src={winner} alt="WINNER" />
-                        <button className="winner-button" onClick={() => this.resetContest()}>
-                            <h2>{'Next Round'}</h2>
-                        </button>
-                    </div> 
+                     <Winner winner={winner} onClick={() => this.resetContest()} />
                 : [
                     this.renderDog(0),
                     this.renderDog(1)
