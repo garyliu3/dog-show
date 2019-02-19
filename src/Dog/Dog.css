@@ -1,0 +1,40 @@
+.contestant {
+    margin: 8px 30px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.contestant-score {
+    background-color: lightgreen;
+    text-align: center;
+    width: 33%;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 6px 8px 0 rgba(0,0,0,0.14), 0 9px 25px 0 rgba(0,0,0,0.09);
+}
+
+.contestant-select {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.contestant-button {
+    border: none;
+    padding: 0px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.contestant-button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.contestant-picture {
+    width: 100%;
+    height: auto;
+}
