@@ -88,13 +88,14 @@ class Stage extends React.Component {
     }
 
     render() {
+        const description = 'You are the judge! Click on your favorite dog to award them a point and call in a new challenger. First dog to be picked 4 times in a row is the winner!';
         const winner = this.checkForWinner();
 
         return (
             <div className="stage">
                 <h1 className="stage-header">{'Best in Show 2019'}</h1>
                 <p className="stage-description">
-                    {'You are the judge! Click on your favorite dog to award them a point and call in a new challenger. First dog to be picked 4 times in a row is the winner!'}
+                    {description}
                 </p>
                 <div className="contestants">
                 {winner ? 
